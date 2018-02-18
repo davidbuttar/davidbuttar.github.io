@@ -15,7 +15,7 @@ Jenkins or Travis. You can run the following command:
 ng test --browsers ChromeHeadless
 {% endhighlight %}
 
-Option 1 is to change the karma config. Open the file karma.config.js in the root directory and change the browsers section as follows:
+Option 2 is to change the karma config. Open the file karma.config.js in the root directory and change the browsers section as follows:
 
 {% highlight json %}
 browsers: ['ChromeHeadless']
