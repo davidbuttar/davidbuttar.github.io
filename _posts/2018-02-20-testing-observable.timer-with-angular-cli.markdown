@@ -24,6 +24,7 @@ it('should call the http and populate the data', fakeAsync(() => {
     fixture.detectChanges();
     tick(1000);
     discardPeriodicTasks();
+    fixture.detectChanges();
     expect(component.answer).toBe(4);
   }));
 {% endhighlight %}
