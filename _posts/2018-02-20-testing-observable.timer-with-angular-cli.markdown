@@ -21,7 +21,6 @@ Karma test, assuming you have otherwise a typical angular cli component test set
 
 {% highlight json %}
 it('should call the http and populate the data', fakeAsync(() => {
-    fixture.detectChanges();
     tick(1000);
     discardPeriodicTasks();
     fixture.detectChanges();
