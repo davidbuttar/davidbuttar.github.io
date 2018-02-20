@@ -5,7 +5,7 @@ date:   2018-02-20 16:59:37 +0000
 categories: Testing, rxjs
 ---
 I've had numerous issues testing angular rxjs streams with any kind of timer functionality such as Observable.timer or
-debouceTime but wanted to share the following working example. I found the I needed to use the discardPeriodicTasks(); function.
+debouceTime but wanted to share the following working example. I found the I needed to use the **discardPeriodicTasks();** function.
 
 Application Code:
 
