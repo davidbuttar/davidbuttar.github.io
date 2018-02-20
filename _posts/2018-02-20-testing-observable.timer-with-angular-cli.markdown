@@ -11,19 +11,19 @@ Application Code:
 
 {% highlight typescript %}
 Observable.timer(0, 10000).mergeMap(() => {
-      return this.someHttpCall(id);
-    }).subscribe((data: any) => {
-      this.answer = data.answer;
-    });
+    return this.someHttpCall(id);
+}).subscribe((data: any) => {
+    this.answer = data.answer;
+});
 {% endhighlight %}
 
 Karma test, assuming you have otherwise a typical angular cli component test set up:
 
-{% highlight json %}
+{% highlight typescript %}
 it('should call the http and populate the data', fakeAsync(() => {
     tick(1000);
     discardPeriodicTasks();
     fixture.detectChanges();
     expect(component.answer).toBe(4);
-  }));
+}));
 {% endhighlight %}
